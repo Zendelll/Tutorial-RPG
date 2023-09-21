@@ -1,0 +1,155 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1695323681
+icon.svg::CompressedTexture2D::3391198228781193077::1695068056::1695068062::1::::<><>::
+world.tscn::PackedScene::1636835816237727498::1695316424::0::1::::<><>::uid://dx1wxbexx87gw::::res://Characters/player.tscn<>uid://byjwer5naqkjn::::res://Objects/bush.tscn<>uid://bqq52ficjw13g::::res://Objects/tree.tscn<>uid://bo4p2fy1hbolg::::res://Action RPG Resources/World/GrassBackground.png<>uid://ggok184vpw3k::::res://Action RPG Resources/World/DirtTileset.png<>uid://dvf71el0clkdi::::res://Action RPG Resources/World/CliffTileset.png<>uid://bv8d25cqnhu3d::::res://Objects/grass.tscn<>uid://chon7icuiw3q6::::res://Characters/bat.tscn
+::res://Action RPG Resources/::1695309268
+EnemyDeathEffect.png::CompressedTexture2D::3647719141628177016::1695309268::1695309268::1::::<><>::
+::res://Action RPG Resources/Effects/::1695309287
+EnemyDeathEffect.png::CompressedTexture2D::460825480603349803::1577955936::1695309287::1::::<><>::
+GrassEffect.png::CompressedTexture2D::4588417164676119762::1695068141::1695068141::1::::<><>::
+HitEffect.png::CompressedTexture2D::984285272753468674::1695068141::1695068141::1::::<><>::
+::res://Action RPG Resources/Enemies/::1695068141
+Bat.png::CompressedTexture2D::6488569898893739900::1695068141::1695068141::1::::<><>::
+::res://Action RPG Resources/Music and Sounds/::1695068142
+EnemyDie.wav::AudioStreamWAV::1768659567854993388::1695068141::1695068142::1::::<><>::
+Evade.wav::AudioStreamWAV::4928842041609903164::1695068141::1695068142::1::::<><>::
+Hit.wav::AudioStreamWAV::4525254873635897187::1695068141::1695068142::1::::<><>::
+Hurt.wav::AudioStreamWAV::3775163225547287411::1695068141::1695068142::1::::<><>::
+Menu Move.wav::AudioStreamWAV::4558427271561025507::1695068141::1695068142::1::::<><>::
+Menu Select.wav::AudioStreamWAV::5075820038181927327::1695068141::1695068142::1::::<><>::
+Music.mp3::AudioStreamMP3::8840663302357841247::1695068141::1695068141::1::::<><>::
+Pause.wav::AudioStreamWAV::8326012408139947161::1695068141::1695068142::1::::<><>::
+Swipe.wav::AudioStreamWAV::8391200305764980403::1695068141::1695068142::1::::<><>::
+Unpause.wav::AudioStreamWAV::7594662608320914411::1695068141::1695068142::1::::<><>::
+::res://Action RPG Resources/Player/::1695068141
+Player.png::CompressedTexture2D::1674729373941854762::1695068141::1695068141::1::::<><>::
+::res://Action RPG Resources/Shadows/::1695068141
+LargeShadow.png::CompressedTexture2D::7066188175418361117::1695068141::1695068141::1::::<><>::
+MediumShadow.png::CompressedTexture2D::2909148394302863896::1695068141::1695068141::1::::<><>::
+SmallShadow.png::CompressedTexture2D::5644268204684001193::1695068141::1695068141::1::::<><>::
+::res://Action RPG Resources/UI/::1695068141
+HeartUIEmpty.png::CompressedTexture2D::8081374147823205496::1695068141::1695068141::1::::<><>::
+HeartUIFull.png::CompressedTexture2D::3931869306307451265::1695068141::1695068141::1::::<><>::
+::res://Action RPG Resources/World/::1695068141
+Bush.png::CompressedTexture2D::7175083541688338301::1695068141::1695068141::1::::<><>::
+CliffTileset.png::CompressedTexture2D::8645539258883587694::1695068141::1695068141::1::::<><>::
+DirtTileset.png::CompressedTexture2D::434388642122288194::1695068141::1695068141::1::::<><>::
+Grass.png::CompressedTexture2D::6647975714756965668::1695068141::1695068141::1::::<><>::
+GrassBackground.png::CompressedTexture2D::3429890721703005036::1695068141::1695068141::1::::<><>::
+Tree.png::CompressedTexture2D::5185036690171384195::1695068141::1695068141::1::::<><>::
+::res://addons/::1614429660
+::res://addons/github-integration/::1614429660
+github-logo.png::CompressedTexture2D::2788002073076236132::1614429660::1695323683::1::::<><>::
+plugin.cfg::TextFile::-1::1614429660::0::1::::<><>::
+::res://addons/github-integration/fonts/::1614429660
+Roboto-Black.ttf::FontFile::3578708489563180172::1614429660::1695323683::1::::<><>::
+Roboto-Regular.ttf::FontFile::6948996398308103756::1614429660::1695323683::1::::<><>::
+SEGOEUI.TTF::FontFile::6833171027614755529::1614429660::1695323683::1::::<><>::
+SEGOEUIB.TTF::FontFile::8081182248539501872::1614429660::1695323683::1::::<><>::
+::res://addons/github-integration/icons/::1614429660
+accept-w.png::CompressedTexture2D::4812841126189407958::1614429660::1695323683::1::::<><>::
+accept.png::CompressedTexture2D::3069516537620958001::1614429660::1695323683::1::::<><>::
+arrow-down.png::CompressedTexture2D::5520295372869365921::1614429660::1695323683::1::::<><>::
+arrow-left.png::CompressedTexture2D::4033420776398100334::1614429660::1695323683::1::::<><>::
+arrow-left.svg::CompressedTexture2D::7526136878092369337::1614429660::1695323683::1::::<><>::
+arrow-right.png::CompressedTexture2D::2373897506697041096::1614429660::1695323683::1::::<><>::
+bell.png::CompressedTexture2D::2365161655852796745::1614429660::1695323683::1::::<><>::
+checked-white.png::CompressedTexture2D::6020357752764007038::1614429660::1695323683::1::::<><>::
+checked.png::CompressedTexture2D::2454165551305752308::1614429660::1695323683::1::::<><>::
+deny-w.png::CompressedTexture2D::1317092977362455912::1614429660::1695323683::1::::<><>::
+deny.png::CompressedTexture2D::924596500107348801::1614429660::1695323683::1::::<><>::
+option-arrow.png::CompressedTexture2D::1871739242347964827::1614429660::1695323683::1::::<><>::
+radioChecked.png::CompressedTexture2D::4322385108820272450::1614429660::1695323683::1::::<><>::
+radioUncheckedhecked.png::CompressedTexture2D::6973567608231105856::1614429660::1695323683::1::::<><>::
+reload.png::CompressedTexture2D::4960064150165473013::1614429660::1695323683::1::::<><>::
+search.png::CompressedTexture2D::475449353895112062::1614429660::1695323683::1::::<><>::
+unchecked-white.png::CompressedTexture2D::6948859342597944843::1614429660::1695323683::1::::<><>::
+unchecked.png::CompressedTexture2D::9149555853804719834::1614429660::1695323683::1::::<><>::
+::res://addons/github-integration/icons.pngs/::1614429660
+::res://addons/github-integration/resources/::1614429660
+github-logo.png::CompressedTexture2D::8062061175338618731::1614429660::1695323683::1::::<><>::
+proxy.png::CompressedTexture2D::9041117161029396115::1614429660::1695323683::1::::<><>::
+search.png::CompressedTexture2D::9015570018951432289::1614429660::1695323683::1::::<><>::
+::res://addons/github-integration/resources/loading/::1614429660
+throbber.png::CompressedTexture2D::7968614130432441582::1614429660::1695323683::1::::<><>::
+::res://addons/github-integration/resources/styles/::1614429660
+Branch-black.tres::StyleBoxFlat::-1::1614429660::0::1::::<><>::
+Branch-white.tres::StyleBoxFlat::-1::1614429660::0::1::::<><>::
+ContentesBG-dark.tres::StyleBoxFlat::-1::1614429660::0::1::::<><>::
+ContentesBG-white.tres::StyleBoxFlat::-1::1614429660::0::1::::<><>::
+List-black.tres::StyleBoxFlat::-1::1614429660::0::1::::<><>::
+List-white.tres::StyleBoxFlat::-1::1614429660::0::1::::<><>::
+Repohead-black.tres::StyleBoxFlat::-1::1614429660::0::1::::<><>::
+Repohead-white.tres::StyleBoxFlat::-1::1614429660::0::1::::<><>::
+::res://addons/github-integration/resources/themes/::1614429660
+GitHubTheme-Dark.tres::Theme::-1::1614429660::0::1::::<><>::
+GitHubTheme.tres::Theme::-1::1614429660::0::1::::<><>::
+::res://addons/github-integration/resources/user/::1614429660
+circle.png::CompressedTexture2D::3607972934238279400::1614429660::1695323683::1::::<><>::
+discord.png::CompressedTexture2D::5584732722729223671::1614429660::1695323683::1::::<><>::
+paypal.png::CompressedTexture2D::2536397162751969478::1614429660::1695323683::1::::<><>::
+placeholder.png::CompressedTexture2D::3904496908301981151::1614429660::1695323683::1::::<><>::
+RoundAvatar.tres::ShaderMaterial::-1::1614429660::0::1::::<><>::res://addons/github-integration/resources/user/circle.png
+::res://addons/github-integration/scenes/::1614429660
+Commit.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/Commit.gd<>res://addons/github-integration/icons/arrow-left.svg<>res://addons/github-integration/resources/themes/GitHubTheme-Dark.tres
+ContributorClass.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/resources/user/circle.png<>res://addons/github-integration/scripts/ContributorClass.gd<>res://addons/github-integration/resources/user/RoundAvatar.tres
+EditGist.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/file-editor/fonts/Roboto-Black.ttf
+Gist.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/Gist.gd<>res://addons/github-integration/icons/arrow-left.svg<>res://addons/github-integration/resources/themes/GitHubTheme.tres<>res://addons/github-integration/scenes/RedBtn.tscn<>res://addons/github-integration/scenes/GreenBtn.tscn
+GistItem.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/GistItem.gd
+GitHub.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/GitHub.gd<>res://addons/github-integration/resources/themes/GitHubTheme-Dark.tres<>res://addons/github-integration/scenes/loading.tscn<>res://addons/github-integration/scenes/Header.tscn<>res://addons/github-integration/scenes/Commit.tscn<>res://addons/github-integration/scenes/SingIn.tscn<>res://addons/github-integration/scenes/UserPanel.tscn<>res://addons/github-integration/scenes/Repo.tscn<>res://addons/github-integration/scenes/Gist.tscn<>res://addons/github-integration/scenes/Notifications.tscn
+GreenBtn.tscn::PackedScene::-1::1614429660::0::1::::<><>::
+Header.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/Header.gd<>res://addons/github-integration/resources/themes/GitHubTheme-Dark.tres<>res://addons/github-integration/icons/reload.png<>res://addons/github-integration/resources/user/circle.png<>res://addons/github-integration/icons/option-arrow.png<>res://addons/github-integration/icons/arrow-left.png<>res://addons/github-integration/resources/user/paypal.png<>res://addons/github-integration/resources/user/discord.png<>res://addons/github-integration/resources/user/placeholder.png<>res://addons/github-integration/resources/user/RoundAvatar.tres<>res://addons/github-integration/icons/bell.png
+InvitationItem.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/InvitationItem.gd<>res://addons/github-integration/icons/deny.png<>res://addons/github-integration/icons/accept.png<>res://addons/github-integration/resources/user/circle.png<>res://addons/github-integration/resources/user/RoundAvatar.tres
+loading.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/loading.gd<>res://addons/github-integration/resources/loading/throbber.png
+NewRepo.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/WindowDialog.gd
+NormalBtn.tscn::PackedScene::-1::1614429660::0::1::::<><>::
+Notifications.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/Notifications.gd<>res://addons/github-integration/resources/themes/GitHubTheme.tres
+RedBtn.tscn::PackedScene::-1::1614429660::0::1::::<><>::
+Repo.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/Repo.gd<>res://addons/github-integration/resources/themes/GitHubTheme-Dark.tres<>res://addons/github-integration/scenes/RedBtn.tscn<>res://addons/github-integration/icons/arrow-right.png<>res://addons/github-integration/icons/arrow-down.png<>res://addons/github-integration/icons/arrow-left.svg<>res://addons/github-integration/resources/styles/ContentesBG-white.tres<>res://addons/github-integration/resources/styles/ContentesBG-dark.tres<>res://addons/github-integration/resources/styles/Branch-black.tres<>res://addons/github-integration/resources/styles/Repohead-black.tres<>res://addons/github-integration/scenes/GreenBtn.tscn
+RepositoryItem.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/RepositoryItem.gd
+RestHandler.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/RestHandler.gd
+SingIn.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scenes/RedBtn.tscn<>res://addons/github-integration/scenes/GreenBtn.tscn<>res://addons/github-integration/scripts/SignIn.gd<>res://addons/github-integration/github-logo.png<>res://addons/github-integration/resources/themes/GitHubTheme-Dark.tres
+UserPanel.tscn::PackedScene::-1::1614429660::0::1::::<><>::res://addons/github-integration/scripts/NewGist.gd<>res://addons/github-integration/resources/user/placeholder.png<>res://addons/github-integration/icons/search.png<>res://addons/github-integration/scripts/UserPanel.gd<>res://addons/github-integration/resources/themes/GitHubTheme-Dark.tres<>res://addons/github-integration/scenes/NormalBtn.tscn<>res://addons/github-integration/scenes/NewRepo.tscn<>res://addons/github-integration/resources/styles/List-black.tres<>res://addons/github-integration/icons/reload.png
+::res://addons/github-integration/scripts/::1614429660
+Commit.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+ContributorClass.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+Gist.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+GistItem.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+github-integration.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+GitHub.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+Header.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+IconLoaderGithub.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+InvitationItem.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+loading.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+NewGist.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+Notifications.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+PluginSettings.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+Repo.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+Repos.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+RepositoryItem.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+RestHandler.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+SignIn.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+UserPanel.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+user_data.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+WindowDialog.gd::GDScript::-1::1614429660::0::1::::<>RefCounted<>::
+::res://Characters/::1695316449
+bat.gd::GDScript::-1::1695316297::0::1::::<>CharacterBody2D<>::
+bat.tscn::PackedScene::5293911451916893151::1695316449::0::1::::<><>::uid://cypd2e1ewrgwq::::res://Action RPG Resources/Enemies/Bat.png<>res://Characters/bat.gd<>uid://cmoejjh62ab7v::::res://Action RPG Resources/Shadows/SmallShadow.png<>uid://cf86k1fap0abo::::res://Misc/enemy_death_effect.tscn<>uid://wqmd3k7av0mj::::res://Hitboxes/hurtbox.tscn<>uid://cknou6pu6j8fc::::res://Misc/stats.tscn<>uid://bh3hvitmgrd0s::::res://Misc/hit_effect.tscn
+player.gd::GDScript::-1::1695304425::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::8828656183239929530::1695316424::0::1::::<><>::uid://x4isvu3gh1fa::::res://Action RPG Resources/Player/Player.png<>res://Characters/player.gd<>uid://c84ymqymsnpyx::::res://Hitboxes/hitbox.tscn<>uid://cknou6pu6j8fc::::res://Misc/stats.tscn
+::res://Effects/::1695161063
+::res://Hitboxes/::1695165098
+hitbox.tscn::PackedScene::7150419677680974731::1695165030::0::1::::<><>::
+hurtbox.tscn::PackedScene::1577920052953217581::1695165098::0::1::::<><>::
+::res://Misc/::1695316414
+effect.gd::GDScript::-1::1695316287::0::1::::<>AnimatedSprite2D<>::
+effect.tscn::PackedScene::6586490022619097903::1695316414::0::1::::<><>::res://Misc/effect.gd
+enemy_death_effect.tscn::PackedScene::5193811509527299496::1695315446::0::1::::<><>::res://Misc/effect.gd<>uid://gthy07uoavst::::res://Action RPG Resources/Effects/EnemyDeathEffect.png
+hit_effect.tscn::PackedScene::2936008136986370200::1695316397::0::1::::<><>::res://Misc/effect.gd<>uid://oa2bgbl3hyte::::res://Action RPG Resources/Effects/HitEffect.png
+stats.gd::GDScript::-1::1695316397::0::1::::<>Node<>::
+stats.tscn::PackedScene::5502454120692579112::1695315429::0::1::::<><>::res://Misc/stats.gd
+::res://Objects/::1695308265
+bush.tscn::PackedScene::4090876187641284231::1695140576::0::1::::<><>::uid://dahwtv0rq8pcv
+grass.gd::GDScript::-1::1695166658::0::1::::<>Node2D<>::
+grass.tscn::PackedScene::3928742812924236819::1695308265::0::1::::<><>::res://Objects/grass.gd<>uid://c1ylgogi58x0o::::res://Action RPG Resources/World/Grass.png<>uid://b6mwtb0b567xm::::res://Action RPG Resources/Effects/GrassEffect.png<>uid://wqmd3k7av0mj::::res://Hitboxes/hurtbox.tscn
+tree.tscn::PackedScene::3544342227263981350::1695140573::0::1::::<><>::uid://cf4w2dbhnsikp

@@ -1,0 +1,108 @@
+[gd_scene load_steps=14 format=3 uid="uid://chon7icuiw3q6"]
+
+[ext_resource type="Texture2D" uid="uid://cypd2e1ewrgwq" path="res://Action RPG Resources/Enemies/Bat.png" id="1_ij1fe"]
+[ext_resource type="Script" path="res://Characters/bat.gd" id="1_ryj5b"]
+[ext_resource type="Texture2D" uid="uid://cmoejjh62ab7v" path="res://Action RPG Resources/Shadows/SmallShadow.png" id="2_mftoi"]
+[ext_resource type="PackedScene" uid="uid://cf86k1fap0abo" path="res://Misc/enemy_death_effect.tscn" id="2_wybnu"]
+[ext_resource type="PackedScene" uid="uid://wqmd3k7av0mj" path="res://Hitboxes/hurtbox.tscn" id="3_ca4mr"]
+[ext_resource type="PackedScene" uid="uid://cknou6pu6j8fc" path="res://Misc/stats.tscn" id="5_cedc7"]
+[ext_resource type="PackedScene" uid="uid://bh3hvitmgrd0s" path="res://Misc/hit_effect.tscn" id="7_816o7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b3avy"]
+radius = 4.12311
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_63hig"]
+radius = 6.0
+height = 18.0
+
+[sub_resource type="Animation" id="Animation_oxng0"]
+resource_name = "Die"
+
+[sub_resource type="Animation" id="Animation_7jllg"]
+resource_name = "Fly"
+length = 0.4
+loop_mode = 1
+step = 0.08
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bat_sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.08, 0.16, 0.24, 0.32),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_hg3ul"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bat_sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_76dnl"]
+_data = {
+"Die": SubResource("Animation_oxng0"),
+"Fly": SubResource("Animation_7jllg"),
+"RESET": SubResource("Animation_hg3ul")
+}
+
+[node name="Bat" type="CharacterBody2D"]
+y_sort_enabled = true
+collision_layer = 16
+script = ExtResource("1_ryj5b")
+
+[node name="Enemy_death" parent="." instance=ExtResource("2_wybnu")]
+position = Vector2(0, -16)
+frame = 1
+frame_progress = 0.0
+
+[node name="Bat_sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_ij1fe")
+offset = Vector2(0, -12)
+hframes = 5
+
+[node name="Shadow_sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_mftoi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_b3avy")
+
+[node name="Hurtbox" parent="." instance=ExtResource("3_ca4mr")]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(0, -14)
+shape = SubResource("CapsuleShape2D_63hig")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Fly"
+libraries = {
+"": SubResource("AnimationLibrary_76dnl")
+}
+
+[node name="Stats" parent="." instance=ExtResource("5_cedc7")]
+max_health = 2
+
+[node name="Hit_effect" parent="." instance=ExtResource("7_816o7")]
+visible = false
+z_index = 1
+position = Vector2(0, -17)
+
+[connection signal="animation_finished" from="Enemy_death" to="." method="_on_enemy_death_animation_finished"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="no_health" from="Stats" to="." method="_on_stats_no_health"]
+
+[editable path="Hurtbox"]

@@ -1,0 +1,2735 @@
+[gd_scene load_steps=12 format=3 uid="uid://xk5pgpan7ruo"]
+
+[ext_resource type="PackedScene" uid="uid://dx1wxbexx87gw" path="res://Characters/player.tscn" id="2_rd7hc"]
+[ext_resource type="PackedScene" uid="uid://byjwer5naqkjn" path="res://Objects/bush.tscn" id="2_umx71"]
+[ext_resource type="PackedScene" uid="uid://bqq52ficjw13g" path="res://Objects/tree.tscn" id="3_ok0bg"]
+[ext_resource type="Texture2D" uid="uid://bo4p2fy1hbolg" path="res://Action RPG Resources/World/GrassBackground.png" id="4_x3xfx"]
+[ext_resource type="Texture2D" uid="uid://ggok184vpw3k" path="res://Action RPG Resources/World/DirtTileset.png" id="5_old4b"]
+[ext_resource type="Texture2D" uid="uid://dvf71el0clkdi" path="res://Action RPG Resources/World/CliffTileset.png" id="6_1iisl"]
+[ext_resource type="PackedScene" uid="uid://bv8d25cqnhu3d" path="res://Objects/grass.tscn" id="7_ka4ks"]
+[ext_resource type="PackedScene" uid="uid://chon7icuiw3q6" path="res://Characters/bat.tscn" id="8_37564"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2h83e"]
+texture = ExtResource("5_old4b")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+7:0/0 = 0
+7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_0/angular_velocity = 0.0
+8:0/0 = 0
+8:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:0/0/physics_layer_0/angular_velocity = 0.0
+9:0/0 = 0
+9:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+5:1/0 = 0
+5:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+7:1/0 = 0
+7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_0/angular_velocity = 0.0
+8:1/0 = 0
+8:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:1/0/physics_layer_0/angular_velocity = 0.0
+9:1/0 = 0
+9:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:1/0/physics_layer_0/angular_velocity = 0.0
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+3:2/0 = 0
+3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:2/0/physics_layer_0/angular_velocity = 0.0
+4:2/0 = 0
+4:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:2/0/physics_layer_0/angular_velocity = 0.0
+5:2/0 = 0
+5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0 = 0
+6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_0/angular_velocity = 0.0
+7:2/0 = 0
+7:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:2/0/physics_layer_0/angular_velocity = 0.0
+8:2/0 = 0
+8:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:2/0/physics_layer_0/angular_velocity = 0.0
+9:2/0 = 0
+9:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:2/0/physics_layer_0/angular_velocity = 0.0
+10:2/0 = 0
+10:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:2/0/physics_layer_0/angular_velocity = 0.0
+0:3/0 = 0
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+1:3/0 = 0
+1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:3/0/physics_layer_0/angular_velocity = 0.0
+2:3/0 = 0
+2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:3/0/physics_layer_0/angular_velocity = 0.0
+3:3/0 = 0
+3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:3/0/physics_layer_0/angular_velocity = 0.0
+4:3/0 = 0
+4:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:3/0/physics_layer_0/angular_velocity = 0.0
+5:3/0 = 0
+5:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:3/0/physics_layer_0/angular_velocity = 0.0
+6:3/0 = 0
+6:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:3/0/physics_layer_0/angular_velocity = 0.0
+7:3/0 = 0
+7:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:3/0/physics_layer_0/angular_velocity = 0.0
+8:3/0 = 0
+8:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:3/0/physics_layer_0/angular_velocity = 0.0
+9:3/0 = 0
+9:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:3/0/physics_layer_0/angular_velocity = 0.0
+10:3/0 = 0
+10:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:3/0/physics_layer_0/angular_velocity = 0.0
+4:4/0 = 0
+4:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:4/0/physics_layer_0/angular_velocity = 0.0
+5:4/0 = 0
+5:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:4/0/physics_layer_0/angular_velocity = 0.0
+6:4/0 = 0
+6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:4/0/physics_layer_0/angular_velocity = 0.0
+7:4/0 = 0
+7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:4/0/physics_layer_0/angular_velocity = 0.0
+8:4/0 = 0
+8:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:4/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t12jk"]
+texture = ExtResource("6_1iisl")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.125, -2.4375, -2.875, -2.6875, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, 3.125, 8, 2.875, -2.4375, -8, -2.6875, -8, -8)
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.125, -2.4375, -2.875, -2.6875, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_0/angular_velocity = 0.0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, 3.125, 8, 2.875, -2.4375, -8, -2.6875, -8, -8)
+8:0/0 = 0
+8:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:0/0/physics_layer_0/angular_velocity = 0.0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.125, -2.4375, -2.875, -2.6875, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:0/0/physics_layer_0/angular_velocity = 0.0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+10:0/0 = 0
+10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:0/0/physics_layer_0/angular_velocity = 0.0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+11:0/0 = 0
+11:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:0/0/physics_layer_0/angular_velocity = 0.0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+12:0/0 = 0
+12:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:0/0/physics_layer_0/angular_velocity = 0.0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+13:0/0 = 0
+13:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:0/0/physics_layer_0/angular_velocity = 0.0
+13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+14:0/0 = 0
+14:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:0/0/physics_layer_0/angular_velocity = 0.0
+14:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+15:0/0 = 0
+15:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:0/0/physics_layer_0/angular_velocity = 0.0
+15:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, 3.125, 8, 2.875, -2.4375, -8, -2.6875, -8, -8)
+16:0/0 = 0
+16:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:0/0/physics_layer_0/angular_velocity = 0.0
+16:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+17:0/0 = 0
+17:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:0/0/physics_layer_0/angular_velocity = 0.0
+17:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+19:0/0 = 0
+19:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:0/0/physics_layer_0/angular_velocity = 0.0
+19:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:1/0/physics_layer_0/angular_velocity = 0.0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_0/angular_velocity = 0.0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:1/0/physics_layer_0/angular_velocity = 0.0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:1/0/physics_layer_0/angular_velocity = 0.0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+11:1/0 = 0
+11:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:1/0/physics_layer_0/angular_velocity = 0.0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+12:1/0 = 0
+12:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:1/0/physics_layer_0/angular_velocity = 0.0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+14:1/0 = 0
+14:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:1/0/physics_layer_0/angular_velocity = 0.0
+14:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+15:1/0 = 0
+15:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:1/0/physics_layer_0/angular_velocity = 0.0
+15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+16:1/0 = 0
+16:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:1/0/physics_layer_0/angular_velocity = 0.0
+16:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+17:1/0 = 0
+17:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:1/0/physics_layer_0/angular_velocity = 0.0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+18:1/0 = 0
+18:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:1/0/physics_layer_0/angular_velocity = 0.0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+5:2/0 = 0
+5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_0/angular_velocity = 0.0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:2/0/physics_layer_0/angular_velocity = 0.0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:2/0/physics_layer_0/angular_velocity = 0.0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+15:2/0 = 0
+15:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:2/0/physics_layer_0/angular_velocity = 0.0
+15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+18:2/0 = 0
+18:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:2/0/physics_layer_0/angular_velocity = 0.0
+18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+0:3/0 = 0
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:3/0/physics_layer_0/angular_velocity = 0.0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+6:3/0 = 0
+6:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:3/0/physics_layer_0/angular_velocity = 0.0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+7:3/0 = 0
+7:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:3/0/physics_layer_0/angular_velocity = 0.0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+8:3/0 = 0
+8:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:3/0/physics_layer_0/angular_velocity = 0.0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+9:3/0 = 0
+9:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:3/0/physics_layer_0/angular_velocity = 0.0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+11:3/0 = 0
+11:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:3/0/physics_layer_0/angular_velocity = 0.0
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+12:3/0 = 0
+12:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:3/0/physics_layer_0/angular_velocity = 0.0
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+14:3/0 = 0
+14:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:3/0/physics_layer_0/angular_velocity = 0.0
+14:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+15:3/0 = 0
+15:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:3/0/physics_layer_0/angular_velocity = 0.0
+15:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+16:3/0 = 0
+16:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:3/0/physics_layer_0/angular_velocity = 0.0
+16:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+17:3/0 = 0
+17:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:3/0/physics_layer_0/angular_velocity = 0.0
+17:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+19:3/0 = 0
+19:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:3/0/physics_layer_0/angular_velocity = 0.0
+19:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+0:4/0 = 0
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+5:4/0 = 0
+5:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:4/0/physics_layer_0/angular_velocity = 0.0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+6:4/0 = 0
+6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:4/0/physics_layer_0/angular_velocity = 0.0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+7:4/0 = 0
+7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:4/0/physics_layer_0/angular_velocity = 0.0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+8:4/0 = 0
+8:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:4/0/physics_layer_0/angular_velocity = 0.0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+9:4/0 = 0
+9:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:4/0/physics_layer_0/angular_velocity = 0.0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+11:4/0 = 0
+11:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:4/0/physics_layer_0/angular_velocity = 0.0
+11:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+12:4/0 = 0
+12:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:4/0/physics_layer_0/angular_velocity = 0.0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+14:4/0 = 0
+14:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:4/0/physics_layer_0/angular_velocity = 0.0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+15:4/0 = 0
+15:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:4/0/physics_layer_0/angular_velocity = 0.0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+16:4/0 = 0
+16:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:4/0/physics_layer_0/angular_velocity = 0.0
+16:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+17:4/0 = 0
+17:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:4/0/physics_layer_0/angular_velocity = 0.0
+17:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+18:4/0 = 0
+18:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:4/0/physics_layer_0/angular_velocity = 0.0
+18:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+19:4/0 = 0
+19:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:4/0/physics_layer_0/angular_velocity = 0.0
+19:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+20:4/0 = 0
+20:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:4/0/physics_layer_0/angular_velocity = 0.0
+20:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+21:4/0 = 0
+21:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:4/0/physics_layer_0/angular_velocity = 0.0
+21:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+0:5/0 = 0
+0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_0/angular_velocity = 0.0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:5/0 = 0
+1:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:5/0/physics_layer_0/angular_velocity = 0.0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:5/0 = 0
+2:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:5/0/physics_layer_0/angular_velocity = 0.0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:5/0 = 0
+3:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:5/0/physics_layer_0/angular_velocity = 0.0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0 = 0
+4:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:5/0/physics_layer_0/angular_velocity = 0.0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:5/0 = 0
+5:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:5/0/physics_layer_0/angular_velocity = 0.0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:5/0 = 0
+6:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:5/0/physics_layer_0/angular_velocity = 0.0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:5/0 = 0
+7:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:5/0/physics_layer_0/angular_velocity = 0.0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:5/0 = 0
+8:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:5/0/physics_layer_0/angular_velocity = 0.0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+15:5/0 = 0
+15:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:5/0/physics_layer_0/angular_velocity = 0.0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+18:5/0 = 0
+18:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:5/0/physics_layer_0/angular_velocity = 0.0
+18:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+21:5/0 = 0
+21:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:5/0/physics_layer_0/angular_velocity = 0.0
+21:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+0:6/0 = 0
+0:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:6/0/physics_layer_0/angular_velocity = 0.0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.125, -2.4375, -2.875, -2.6875, 8, -8, 8)
+1:6/0 = 0
+1:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:6/0/physics_layer_0/angular_velocity = 0.0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+2:6/0 = 0
+2:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:6/0/physics_layer_0/angular_velocity = 0.0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+3:6/0 = 0
+3:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:6/0/physics_layer_0/angular_velocity = 0.0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+4:6/0 = 0
+4:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:6/0/physics_layer_0/angular_velocity = 0.0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, -8, -2.6875, -8, -8)
+5:6/0 = 0
+5:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:6/0/physics_layer_0/angular_velocity = 0.0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, 3.125, 8, 2.875, -2.4375, -8, -2.6875, -8, -8)
+6:6/0 = 0
+6:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:6/0/physics_layer_0/angular_velocity = 0.0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.125, -2.4375, -2.875, -2.6875, 8, -8, 8)
+7:6/0 = 0
+7:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:6/0/physics_layer_0/angular_velocity = 0.0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, 3.125, 8, 2.875, -2.4375, -8, -2.6875, -8, -8)
+8:6/0 = 0
+8:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:6/0/physics_layer_0/angular_velocity = 0.0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+9:6/0 = 0
+9:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:6/0/physics_layer_0/angular_velocity = 0.0
+9:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+11:6/0 = 0
+11:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:6/0/physics_layer_0/angular_velocity = 0.0
+11:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+12:6/0 = 0
+12:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:6/0/physics_layer_0/angular_velocity = 0.0
+12:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+14:6/0 = 0
+14:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:6/0/physics_layer_0/angular_velocity = 0.0
+14:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+15:6/0 = 0
+15:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:6/0/physics_layer_0/angular_velocity = 0.0
+15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+16:6/0 = 0
+16:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:6/0/physics_layer_0/angular_velocity = 0.0
+16:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+17:6/0 = 0
+17:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:6/0/physics_layer_0/angular_velocity = 0.0
+17:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+18:6/0 = 0
+18:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:6/0/physics_layer_0/angular_velocity = 0.0
+18:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+21:6/0 = 0
+21:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:6/0/physics_layer_0/angular_velocity = 0.0
+21:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+0:7/0 = 0
+0:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:7/0/physics_layer_0/angular_velocity = 0.0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:7/0 = 0
+1:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:7/0/physics_layer_0/angular_velocity = 0.0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:7/0 = 0
+2:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:7/0/physics_layer_0/angular_velocity = 0.0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:7/0 = 0
+3:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:7/0/physics_layer_0/angular_velocity = 0.0
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:7/0 = 0
+4:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:7/0/physics_layer_0/angular_velocity = 0.0
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:7/0 = 0
+5:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:7/0/physics_layer_0/angular_velocity = 0.0
+5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:7/0 = 0
+6:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:7/0/physics_layer_0/angular_velocity = 0.0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:7/0 = 0
+7:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:7/0/physics_layer_0/angular_velocity = 0.0
+7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:7/0 = 0
+8:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:7/0/physics_layer_0/angular_velocity = 0.0
+8:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:7/0 = 0
+9:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:7/0/physics_layer_0/angular_velocity = 0.0
+9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:7/0 = 0
+10:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:7/0/physics_layer_0/angular_velocity = 0.0
+10:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:7/0 = 0
+11:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:7/0/physics_layer_0/angular_velocity = 0.0
+11:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:7/0 = 0
+12:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:7/0/physics_layer_0/angular_velocity = 0.0
+12:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:7/0 = 0
+13:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:7/0/physics_layer_0/angular_velocity = 0.0
+13:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:7/0 = 0
+14:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:7/0/physics_layer_0/angular_velocity = 0.0
+14:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:7/0 = 0
+15:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:7/0/physics_layer_0/angular_velocity = 0.0
+15:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:7/0 = 0
+16:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:7/0/physics_layer_0/angular_velocity = 0.0
+16:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:7/0 = 0
+17:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:7/0/physics_layer_0/angular_velocity = 0.0
+17:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:7/0 = 0
+18:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:7/0/physics_layer_0/angular_velocity = 0.0
+18:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+19:7/0 = 0
+19:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:7/0/physics_layer_0/angular_velocity = 0.0
+19:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+20:7/0 = 0
+20:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+20:7/0/physics_layer_0/angular_velocity = 0.0
+20:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+21:7/0 = 0
+21:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+21:7/0/physics_layer_0/angular_velocity = 0.0
+21:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+8:8/0 = 0
+8:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:8/0/physics_layer_0/angular_velocity = 0.0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+9:8/0 = 0
+9:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:8/0/physics_layer_0/angular_velocity = 0.0
+9:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+11:8/0 = 0
+11:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:8/0/physics_layer_0/angular_velocity = 0.0
+11:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+12:8/0 = 0
+12:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:8/0/physics_layer_0/angular_velocity = 0.0
+12:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+14:8/0 = 0
+14:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:8/0/physics_layer_0/angular_velocity = 0.0
+14:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+15:8/0 = 0
+15:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:8/0/physics_layer_0/angular_velocity = 0.0
+15:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+16:8/0 = 0
+16:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:8/0/physics_layer_0/angular_velocity = 0.0
+16:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -4, -3.6875, -8, -2.6875)
+17:8/0 = 0
+17:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:8/0/physics_layer_0/angular_velocity = 0.0
+17:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, -2.65625, 3.6875, -4, 2.6875, -8)
+8:9/0 = 0
+8:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:9/0/physics_layer_0/angular_velocity = 0.0
+8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+9:9/0 = 0
+9:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:9/0/physics_layer_0/angular_velocity = 0.0
+9:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+11:9/0 = 0
+11:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:9/0/physics_layer_0/angular_velocity = 0.0
+11:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+12:9/0 = 0
+12:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:9/0/physics_layer_0/angular_velocity = 0.0
+12:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+14:9/0 = 0
+14:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:9/0/physics_layer_0/angular_velocity = 0.0
+14:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+15:9/0 = 0
+15:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:9/0/physics_layer_0/angular_velocity = 0.0
+15:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+16:9/0 = 0
+16:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:9/0/physics_layer_0/angular_velocity = 0.0
+16:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.65625, -8, -2.6875, 8, -8, 8)
+17:9/0 = 0
+17:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:9/0/physics_layer_0/angular_velocity = 0.0
+17:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 2.65625, -8, 2.6875, 8, 8, 8)
+
+[sub_resource type="TileSet" id="TileSet_2dit3"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_2h83e")
+sources/1 = SubResource("TileSetAtlasSource_t12jk")
+
+[node name="World" type="Node2D"]
+metadata/_edit_lock_ = true
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -1523.0
+offset_top = -791.0
+offset_right = 1481.0
+offset_bottom = 891.0
+texture = ExtResource("4_x3xfx")
+expand_mode = 2
+stretch_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_2dit3")
+format = 2
+layer_0/name = "Base"
+layer_0/tile_data = PackedInt32Array(655368, 65536, 1, 655369, 65536, 0, 720905, 65536, 1, 720904, 65536, 1, 720903, 65536, 1, 786440, 65536, 1, 786441, 65536, 1, 851977, 65536, 1, 851978, 65536, 1, 589831, 0, 0, 589832, 131072, 0, 655370, 131072, 0, 720906, 65536, 1, 786442, 65536, 1, 720907, 131072, 0, 786443, 65536, 1, 851979, 65536, 1, 786444, 131072, 0, 851980, 131072, 1, 917516, 131072, 2, 917515, 65536, 2, 917514, 65536, 2, 917513, 65536, 2, 917512, 0, 2, 851976, 65536, 1, 851975, 0, 2, 786439, 65536, 1, 786438, 0, 2, 720902, 0, 0, 655367, 0, 1, 786452, 65536, 3, 786451, 65536, 3, 786450, 65536, 3, 786449, 65536, 3, 720912, 196608, 1, 655376, 196608, 0, 786448, 0, 2, 786453, 65536, 3, 786454, 131072, 2, 720918, 196608, 1, 655382, 196608, 1, 589846, 196608, 1, 524310, 196608, 1, 458774, 196608, 1, 393238, 196608, 1, 327702, 196608, 0)
+layer_1/name = "Cliffs"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(917519, 196609, 5, 917520, 196609, 5, 917521, 196609, 5, 917522, 196609, 5, 917518, 1, 5, 917523, 327681, 5, 851987, 720897, 9, 720915, 720897, 4, 851982, 1, 3, 786446, 1, 3, 720910, 1, 3, 655374, 1, 3, 589838, 1, 3, 524302, 1, 3, 458766, 1, 0, 458767, 131073, 0, 458768, 131073, 0, 458769, 131073, 0, 458770, 131073, 0, 458771, 327681, 0, 524307, 327681, 1, 589843, 327681, 1, 655379, 720897, 3, 851988, 196609, 5, 720916, 131073, 0)
+metadata/_edit_lock_ = true
+
+[node name="YSort" type="Node2D" parent="."]
+y_sort_enabled = true
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="YSort" instance=ExtResource("2_rd7hc")]
+position = Vector2(114, 129)
+
+[node name="Objects" type="Node2D" parent="YSort"]
+y_sort_enabled = true
+
+[node name="Bushes" type="Node2D" parent="YSort/Objects"]
+y_sort_enabled = true
+
+[node name="Bush" parent="YSort/Objects/Bushes" instance=ExtResource("2_umx71")]
+position = Vector2(186, 96)
+
+[node name="Bush2" parent="YSort/Objects/Bushes" instance=ExtResource("2_umx71")]
+position = Vector2(37, 205)
+
+[node name="Trees" type="Node2D" parent="YSort/Objects"]
+y_sort_enabled = true
+
+[node name="Tree" parent="YSort/Objects/Trees" instance=ExtResource("3_ok0bg")]
+position = Vector2(263, 152)
+
+[node name="Tree2" parent="YSort/Objects/Trees" instance=ExtResource("3_ok0bg")]
+position = Vector2(197, 127)
+
+[node name="Grass" type="Node2D" parent="YSort/Objects"]
+y_sort_enabled = true
+
+[node name="Grass" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(148, 129)
+
+[node name="Grass2" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(85, 85)
+
+[node name="Grass3" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(134, 88)
+
+[node name="Grass6" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(37, 53)
+
+[node name="Grass59" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(39, 10)
+
+[node name="Grass7" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(54, 53)
+
+[node name="Grass8" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(70, 53)
+
+[node name="Grass9" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(87, 54)
+
+[node name="Grass10" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(104, 53)
+
+[node name="Grass11" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(121, 52)
+
+[node name="Grass12" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(138, 52)
+
+[node name="Grass13" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(155, 53)
+
+[node name="Grass14" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(172, 53)
+
+[node name="Grass15" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(38, 38)
+
+[node name="Grass16" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(55, 38)
+
+[node name="Grass17" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(71, 38)
+
+[node name="Grass18" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(88, 39)
+
+[node name="Grass19" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(105, 38)
+
+[node name="Grass20" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(122, 37)
+
+[node name="Grass21" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(139, 37)
+
+[node name="Grass22" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(156, 38)
+
+[node name="Grass23" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(173, 38)
+
+[node name="Grass24" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(39, 24)
+
+[node name="Grass25" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(56, 24)
+
+[node name="Grass26" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(72, 24)
+
+[node name="Grass27" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(89, 25)
+
+[node name="Grass28" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(106, 24)
+
+[node name="Grass29" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(123, 23)
+
+[node name="Grass30" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(140, 23)
+
+[node name="Grass31" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(157, 24)
+
+[node name="Grass32" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(174, 24)
+
+[node name="Grass33" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(56, 10)
+
+[node name="Grass34" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(72, 10)
+
+[node name="Grass35" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(89, 11)
+
+[node name="Grass36" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(106, 10)
+
+[node name="Grass37" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(123, 9)
+
+[node name="Grass38" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(140, 9)
+
+[node name="Grass39" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(157, 10)
+
+[node name="Grass40" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(174, 10)
+
+[node name="Grass41" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(40, -5)
+
+[node name="Grass42" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(57, -5)
+
+[node name="Grass43" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(73, -5)
+
+[node name="Grass44" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(90, -4)
+
+[node name="Grass45" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(107, -5)
+
+[node name="Grass46" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(124, -6)
+
+[node name="Grass47" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(141, -6)
+
+[node name="Grass48" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(158, -5)
+
+[node name="Grass49" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(175, -5)
+
+[node name="Grass50" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(41, -19)
+
+[node name="Grass51" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(58, -19)
+
+[node name="Grass52" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(74, -19)
+
+[node name="Grass53" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(91, -18)
+
+[node name="Grass54" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(108, -19)
+
+[node name="Grass55" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(125, -20)
+
+[node name="Grass56" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(142, -20)
+
+[node name="Grass57" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(159, -19)
+
+[node name="Grass58" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(176, -19)
+
+[node name="Grass60" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(37, 53)
+
+[node name="Grass61" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(39, 10)
+
+[node name="Grass62" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(54, 53)
+
+[node name="Grass63" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(70, 53)
+
+[node name="Grass64" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(87, 54)
+
+[node name="Grass65" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(104, 53)
+
+[node name="Grass66" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(121, 52)
+
+[node name="Grass67" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(138, 52)
+
+[node name="Grass68" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(155, 53)
+
+[node name="Grass69" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(172, 53)
+
+[node name="Grass70" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(38, 38)
+
+[node name="Grass71" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(55, 38)
+
+[node name="Grass72" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(71, 38)
+
+[node name="Grass73" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(88, 39)
+
+[node name="Grass74" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(105, 38)
+
+[node name="Grass75" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(122, 37)
+
+[node name="Grass76" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(139, 37)
+
+[node name="Grass77" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(156, 38)
+
+[node name="Grass78" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(173, 38)
+
+[node name="Grass79" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(39, 24)
+
+[node name="Grass80" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(56, 24)
+
+[node name="Grass81" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(72, 24)
+
+[node name="Grass82" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(89, 25)
+
+[node name="Grass83" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(106, 24)
+
+[node name="Grass84" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(123, 23)
+
+[node name="Grass85" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(140, 23)
+
+[node name="Grass86" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(157, 24)
+
+[node name="Grass87" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(174, 24)
+
+[node name="Grass88" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(56, 10)
+
+[node name="Grass89" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(72, 10)
+
+[node name="Grass90" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(89, 11)
+
+[node name="Grass91" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(106, 10)
+
+[node name="Grass92" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(123, 9)
+
+[node name="Grass93" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(140, 9)
+
+[node name="Grass94" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(157, 10)
+
+[node name="Grass95" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(174, 10)
+
+[node name="Grass96" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(40, -5)
+
+[node name="Grass97" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(57, -5)
+
+[node name="Grass98" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(73, -5)
+
+[node name="Grass99" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(90, -4)
+
+[node name="Grass100" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(107, -5)
+
+[node name="Grass101" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(124, -6)
+
+[node name="Grass102" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(141, -6)
+
+[node name="Grass103" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(158, -5)
+
+[node name="Grass104" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(175, -5)
+
+[node name="Grass105" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(41, -19)
+
+[node name="Grass106" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(58, -19)
+
+[node name="Grass107" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(74, -19)
+
+[node name="Grass108" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(91, -18)
+
+[node name="Grass109" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(108, -19)
+
+[node name="Grass110" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(125, -20)
+
+[node name="Grass111" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(142, -20)
+
+[node name="Grass112" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(159, -19)
+
+[node name="Grass113" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(176, -19)
+
+[node name="Grass114" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(41, -34)
+
+[node name="Grass115" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(43, -77)
+
+[node name="Grass116" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(58, -34)
+
+[node name="Grass117" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(74, -34)
+
+[node name="Grass118" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(91, -33)
+
+[node name="Grass119" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(108, -34)
+
+[node name="Grass120" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(125, -35)
+
+[node name="Grass121" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(142, -35)
+
+[node name="Grass122" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(159, -34)
+
+[node name="Grass123" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(176, -34)
+
+[node name="Grass124" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(42, -49)
+
+[node name="Grass125" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(59, -49)
+
+[node name="Grass126" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(75, -49)
+
+[node name="Grass127" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(92, -48)
+
+[node name="Grass128" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(109, -49)
+
+[node name="Grass129" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(126, -50)
+
+[node name="Grass130" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(143, -50)
+
+[node name="Grass131" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(160, -49)
+
+[node name="Grass132" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(177, -49)
+
+[node name="Grass133" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(43, -63)
+
+[node name="Grass134" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(60, -63)
+
+[node name="Grass135" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(76, -63)
+
+[node name="Grass136" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(93, -62)
+
+[node name="Grass137" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(110, -63)
+
+[node name="Grass138" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(127, -64)
+
+[node name="Grass139" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(144, -64)
+
+[node name="Grass140" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(161, -63)
+
+[node name="Grass141" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(178, -63)
+
+[node name="Grass142" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(60, -77)
+
+[node name="Grass143" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(76, -77)
+
+[node name="Grass144" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(93, -76)
+
+[node name="Grass145" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(110, -77)
+
+[node name="Grass146" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(127, -78)
+
+[node name="Grass147" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(144, -78)
+
+[node name="Grass148" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(161, -77)
+
+[node name="Grass149" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(178, -77)
+
+[node name="Grass150" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(44, -92)
+
+[node name="Grass151" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(61, -92)
+
+[node name="Grass152" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(77, -92)
+
+[node name="Grass153" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(94, -91)
+
+[node name="Grass154" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(111, -92)
+
+[node name="Grass155" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(128, -93)
+
+[node name="Grass156" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(145, -93)
+
+[node name="Grass157" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(162, -92)
+
+[node name="Grass158" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(179, -92)
+
+[node name="Grass159" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(45, -106)
+
+[node name="Grass160" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(62, -106)
+
+[node name="Grass161" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(78, -106)
+
+[node name="Grass162" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(95, -105)
+
+[node name="Grass163" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(112, -106)
+
+[node name="Grass164" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(129, -107)
+
+[node name="Grass165" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(146, -107)
+
+[node name="Grass166" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(163, -106)
+
+[node name="Grass167" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(180, -106)
+
+[node name="Grass168" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(41, -34)
+
+[node name="Grass169" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(43, -77)
+
+[node name="Grass170" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(58, -34)
+
+[node name="Grass171" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(74, -34)
+
+[node name="Grass172" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(91, -33)
+
+[node name="Grass173" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(108, -34)
+
+[node name="Grass174" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(125, -35)
+
+[node name="Grass175" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(142, -35)
+
+[node name="Grass176" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(159, -34)
+
+[node name="Grass177" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(176, -34)
+
+[node name="Grass178" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(42, -49)
+
+[node name="Grass179" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(59, -49)
+
+[node name="Grass180" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(75, -49)
+
+[node name="Grass181" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(92, -48)
+
+[node name="Grass182" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(109, -49)
+
+[node name="Grass183" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(126, -50)
+
+[node name="Grass184" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(143, -50)
+
+[node name="Grass185" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(160, -49)
+
+[node name="Grass186" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(177, -49)
+
+[node name="Grass187" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(43, -63)
+
+[node name="Grass188" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(60, -63)
+
+[node name="Grass189" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(76, -63)
+
+[node name="Grass190" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(93, -62)
+
+[node name="Grass191" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(110, -63)
+
+[node name="Grass192" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(127, -64)
+
+[node name="Grass193" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(144, -64)
+
+[node name="Grass194" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(161, -63)
+
+[node name="Grass195" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(178, -63)
+
+[node name="Grass196" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(60, -77)
+
+[node name="Grass197" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(76, -77)
+
+[node name="Grass198" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(93, -76)
+
+[node name="Grass199" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(110, -77)
+
+[node name="Grass200" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(127, -78)
+
+[node name="Grass201" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(144, -78)
+
+[node name="Grass202" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(161, -77)
+
+[node name="Grass203" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(178, -77)
+
+[node name="Grass204" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(44, -92)
+
+[node name="Grass205" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(61, -92)
+
+[node name="Grass206" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(77, -92)
+
+[node name="Grass207" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(94, -91)
+
+[node name="Grass208" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(111, -92)
+
+[node name="Grass209" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(128, -93)
+
+[node name="Grass210" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(145, -93)
+
+[node name="Grass211" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(162, -92)
+
+[node name="Grass212" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(179, -92)
+
+[node name="Grass213" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(45, -106)
+
+[node name="Grass214" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(62, -106)
+
+[node name="Grass215" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(78, -106)
+
+[node name="Grass216" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(95, -105)
+
+[node name="Grass217" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(112, -106)
+
+[node name="Grass218" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(129, -107)
+
+[node name="Grass219" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(146, -107)
+
+[node name="Grass220" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(163, -106)
+
+[node name="Grass221" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(180, -106)
+
+[node name="Grass222" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(194, -40)
+
+[node name="Grass223" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(196, -83)
+
+[node name="Grass224" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(211, -40)
+
+[node name="Grass225" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(227, -40)
+
+[node name="Grass226" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(244, -39)
+
+[node name="Grass227" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(261, -40)
+
+[node name="Grass228" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(278, -41)
+
+[node name="Grass229" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(295, -41)
+
+[node name="Grass230" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(312, -40)
+
+[node name="Grass231" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(329, -40)
+
+[node name="Grass232" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(195, -55)
+
+[node name="Grass233" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(212, -55)
+
+[node name="Grass234" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(228, -55)
+
+[node name="Grass235" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(245, -54)
+
+[node name="Grass236" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(262, -55)
+
+[node name="Grass237" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(279, -56)
+
+[node name="Grass238" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(296, -56)
+
+[node name="Grass239" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(313, -55)
+
+[node name="Grass240" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(330, -55)
+
+[node name="Grass241" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(196, -69)
+
+[node name="Grass242" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(213, -69)
+
+[node name="Grass243" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(229, -69)
+
+[node name="Grass244" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(246, -68)
+
+[node name="Grass245" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(263, -69)
+
+[node name="Grass246" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(280, -70)
+
+[node name="Grass247" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(297, -70)
+
+[node name="Grass248" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(314, -69)
+
+[node name="Grass249" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(331, -69)
+
+[node name="Grass250" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(213, -83)
+
+[node name="Grass251" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(229, -83)
+
+[node name="Grass252" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(246, -82)
+
+[node name="Grass253" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(263, -83)
+
+[node name="Grass254" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(280, -84)
+
+[node name="Grass255" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(297, -84)
+
+[node name="Grass256" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(314, -83)
+
+[node name="Grass257" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(331, -83)
+
+[node name="Grass258" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(197, -98)
+
+[node name="Grass259" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(214, -98)
+
+[node name="Grass260" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(230, -98)
+
+[node name="Grass261" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(247, -97)
+
+[node name="Grass262" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(264, -98)
+
+[node name="Grass263" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(281, -99)
+
+[node name="Grass264" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(298, -99)
+
+[node name="Grass265" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(315, -98)
+
+[node name="Grass266" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(332, -98)
+
+[node name="Grass267" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(198, -112)
+
+[node name="Grass268" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(215, -112)
+
+[node name="Grass269" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(231, -112)
+
+[node name="Grass270" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(248, -111)
+
+[node name="Grass271" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(265, -112)
+
+[node name="Grass272" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(282, -113)
+
+[node name="Grass273" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(299, -113)
+
+[node name="Grass274" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(316, -112)
+
+[node name="Grass275" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(333, -112)
+
+[node name="Grass276" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(194, -40)
+
+[node name="Grass277" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(196, -83)
+
+[node name="Grass278" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(211, -40)
+
+[node name="Grass279" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(227, -40)
+
+[node name="Grass280" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(244, -39)
+
+[node name="Grass281" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(261, -40)
+
+[node name="Grass282" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(278, -41)
+
+[node name="Grass283" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(295, -41)
+
+[node name="Grass284" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(312, -40)
+
+[node name="Grass285" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(329, -40)
+
+[node name="Grass286" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(195, -55)
+
+[node name="Grass287" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(212, -55)
+
+[node name="Grass288" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(228, -55)
+
+[node name="Grass289" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(245, -54)
+
+[node name="Grass290" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(262, -55)
+
+[node name="Grass291" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(279, -56)
+
+[node name="Grass292" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(296, -56)
+
+[node name="Grass293" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(313, -55)
+
+[node name="Grass294" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(330, -55)
+
+[node name="Grass295" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(196, -69)
+
+[node name="Grass296" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(213, -69)
+
+[node name="Grass297" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(229, -69)
+
+[node name="Grass298" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(246, -68)
+
+[node name="Grass299" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(263, -69)
+
+[node name="Grass300" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(280, -70)
+
+[node name="Grass301" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(297, -70)
+
+[node name="Grass302" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(314, -69)
+
+[node name="Grass303" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(331, -69)
+
+[node name="Grass304" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(213, -83)
+
+[node name="Grass305" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(229, -83)
+
+[node name="Grass306" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(246, -82)
+
+[node name="Grass307" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(263, -83)
+
+[node name="Grass308" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(280, -84)
+
+[node name="Grass309" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(297, -84)
+
+[node name="Grass310" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(314, -83)
+
+[node name="Grass311" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(331, -83)
+
+[node name="Grass312" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(197, -98)
+
+[node name="Grass313" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(214, -98)
+
+[node name="Grass314" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(230, -98)
+
+[node name="Grass315" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(247, -97)
+
+[node name="Grass316" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(264, -98)
+
+[node name="Grass317" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(281, -99)
+
+[node name="Grass318" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(298, -99)
+
+[node name="Grass319" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(315, -98)
+
+[node name="Grass320" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(332, -98)
+
+[node name="Grass321" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(198, -112)
+
+[node name="Grass322" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(215, -112)
+
+[node name="Grass323" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(231, -112)
+
+[node name="Grass324" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(248, -111)
+
+[node name="Grass325" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(265, -112)
+
+[node name="Grass326" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(282, -113)
+
+[node name="Grass327" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(299, -113)
+
+[node name="Grass328" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(316, -112)
+
+[node name="Grass329" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(333, -112)
+
+[node name="Grass330" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(192, 50)
+
+[node name="Grass331" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(194, 7)
+
+[node name="Grass332" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(209, 50)
+
+[node name="Grass333" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(225, 50)
+
+[node name="Grass334" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(242, 51)
+
+[node name="Grass335" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(259, 50)
+
+[node name="Grass336" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(276, 49)
+
+[node name="Grass337" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(293, 49)
+
+[node name="Grass338" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(310, 50)
+
+[node name="Grass339" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(327, 50)
+
+[node name="Grass340" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(193, 35)
+
+[node name="Grass341" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(210, 35)
+
+[node name="Grass342" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(226, 35)
+
+[node name="Grass343" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(243, 36)
+
+[node name="Grass344" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(260, 35)
+
+[node name="Grass345" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(277, 34)
+
+[node name="Grass346" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(294, 34)
+
+[node name="Grass347" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(311, 35)
+
+[node name="Grass348" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(328, 35)
+
+[node name="Grass349" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(194, 21)
+
+[node name="Grass350" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(211, 21)
+
+[node name="Grass351" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(227, 21)
+
+[node name="Grass352" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(244, 22)
+
+[node name="Grass353" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(261, 21)
+
+[node name="Grass354" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(278, 20)
+
+[node name="Grass355" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(295, 20)
+
+[node name="Grass356" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(312, 21)
+
+[node name="Grass357" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(329, 21)
+
+[node name="Grass358" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(211, 7)
+
+[node name="Grass359" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(227, 7)
+
+[node name="Grass360" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(244, 8)
+
+[node name="Grass361" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(261, 7)
+
+[node name="Grass362" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(278, 6)
+
+[node name="Grass363" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(295, 6)
+
+[node name="Grass364" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(312, 7)
+
+[node name="Grass365" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(329, 7)
+
+[node name="Grass366" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(195, -8)
+
+[node name="Grass367" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(212, -8)
+
+[node name="Grass368" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(228, -8)
+
+[node name="Grass369" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(245, -7)
+
+[node name="Grass370" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(262, -8)
+
+[node name="Grass371" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(279, -9)
+
+[node name="Grass372" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(296, -9)
+
+[node name="Grass373" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(313, -8)
+
+[node name="Grass374" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(330, -8)
+
+[node name="Grass375" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(196, -22)
+
+[node name="Grass376" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(213, -22)
+
+[node name="Grass377" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(229, -22)
+
+[node name="Grass378" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(246, -21)
+
+[node name="Grass379" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(263, -22)
+
+[node name="Grass380" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(280, -23)
+
+[node name="Grass381" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(297, -23)
+
+[node name="Grass382" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(314, -22)
+
+[node name="Grass383" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(331, -22)
+
+[node name="Grass384" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(192, 50)
+
+[node name="Grass385" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(194, 7)
+
+[node name="Grass386" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(209, 50)
+
+[node name="Grass387" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(225, 50)
+
+[node name="Grass388" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(242, 51)
+
+[node name="Grass389" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(259, 50)
+
+[node name="Grass390" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(276, 49)
+
+[node name="Grass391" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(293, 49)
+
+[node name="Grass392" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(310, 50)
+
+[node name="Grass393" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(327, 50)
+
+[node name="Grass394" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(193, 35)
+
+[node name="Grass395" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(210, 35)
+
+[node name="Grass396" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(226, 35)
+
+[node name="Grass397" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(243, 36)
+
+[node name="Grass398" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(260, 35)
+
+[node name="Grass399" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(277, 34)
+
+[node name="Grass400" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(294, 34)
+
+[node name="Grass401" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(311, 35)
+
+[node name="Grass402" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(328, 35)
+
+[node name="Grass403" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(194, 21)
+
+[node name="Grass404" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(211, 21)
+
+[node name="Grass405" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(227, 21)
+
+[node name="Grass406" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(244, 22)
+
+[node name="Grass407" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(261, 21)
+
+[node name="Grass408" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(278, 20)
+
+[node name="Grass409" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(295, 20)
+
+[node name="Grass410" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(312, 21)
+
+[node name="Grass411" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(329, 21)
+
+[node name="Grass412" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(211, 7)
+
+[node name="Grass413" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(227, 7)
+
+[node name="Grass414" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(244, 8)
+
+[node name="Grass415" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(261, 7)
+
+[node name="Grass416" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(278, 6)
+
+[node name="Grass417" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(295, 6)
+
+[node name="Grass418" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(312, 7)
+
+[node name="Grass419" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(329, 7)
+
+[node name="Grass420" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(195, -8)
+
+[node name="Grass421" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(212, -8)
+
+[node name="Grass422" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(228, -8)
+
+[node name="Grass423" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(245, -7)
+
+[node name="Grass424" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(262, -8)
+
+[node name="Grass425" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(279, -9)
+
+[node name="Grass426" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(296, -9)
+
+[node name="Grass427" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(313, -8)
+
+[node name="Grass428" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(330, -8)
+
+[node name="Grass429" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(196, -22)
+
+[node name="Grass430" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(213, -22)
+
+[node name="Grass431" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(229, -22)
+
+[node name="Grass432" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(246, -21)
+
+[node name="Grass433" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(263, -22)
+
+[node name="Grass434" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(280, -23)
+
+[node name="Grass435" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(297, -23)
+
+[node name="Grass436" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(314, -22)
+
+[node name="Grass437" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(331, -22)
+
+[node name="Grass438" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-113, -41)
+
+[node name="Grass439" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-111, -84)
+
+[node name="Grass440" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-96, -41)
+
+[node name="Grass441" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-80, -41)
+
+[node name="Grass442" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-63, -40)
+
+[node name="Grass443" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-46, -41)
+
+[node name="Grass444" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-29, -42)
+
+[node name="Grass445" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-12, -42)
+
+[node name="Grass446" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(5, -41)
+
+[node name="Grass447" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(22, -41)
+
+[node name="Grass448" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-112, -56)
+
+[node name="Grass449" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-95, -56)
+
+[node name="Grass450" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-79, -56)
+
+[node name="Grass451" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-62, -55)
+
+[node name="Grass452" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-45, -56)
+
+[node name="Grass453" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-28, -57)
+
+[node name="Grass454" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-11, -57)
+
+[node name="Grass455" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(6, -56)
+
+[node name="Grass456" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(23, -56)
+
+[node name="Grass457" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-111, -70)
+
+[node name="Grass458" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-94, -70)
+
+[node name="Grass459" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-78, -70)
+
+[node name="Grass460" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-61, -69)
+
+[node name="Grass461" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-44, -70)
+
+[node name="Grass462" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-27, -71)
+
+[node name="Grass463" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-10, -71)
+
+[node name="Grass464" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(7, -70)
+
+[node name="Grass465" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(24, -70)
+
+[node name="Grass466" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-94, -84)
+
+[node name="Grass467" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-78, -84)
+
+[node name="Grass468" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-61, -83)
+
+[node name="Grass469" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-44, -84)
+
+[node name="Grass470" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-27, -85)
+
+[node name="Grass471" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-10, -85)
+
+[node name="Grass472" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(7, -84)
+
+[node name="Grass473" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(24, -84)
+
+[node name="Grass474" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-110, -99)
+
+[node name="Grass475" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-93, -99)
+
+[node name="Grass476" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-77, -99)
+
+[node name="Grass477" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-60, -98)
+
+[node name="Grass478" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-43, -99)
+
+[node name="Grass479" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-26, -100)
+
+[node name="Grass480" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-9, -100)
+
+[node name="Grass481" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(8, -99)
+
+[node name="Grass482" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(25, -99)
+
+[node name="Grass483" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-109, -113)
+
+[node name="Grass484" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-92, -113)
+
+[node name="Grass485" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-76, -113)
+
+[node name="Grass486" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-59, -112)
+
+[node name="Grass487" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-42, -113)
+
+[node name="Grass488" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-25, -114)
+
+[node name="Grass489" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-8, -114)
+
+[node name="Grass490" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(9, -113)
+
+[node name="Grass491" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(26, -113)
+
+[node name="Grass492" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-113, -41)
+
+[node name="Grass493" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-111, -84)
+
+[node name="Grass494" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-96, -41)
+
+[node name="Grass495" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-80, -41)
+
+[node name="Grass496" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-63, -40)
+
+[node name="Grass497" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-46, -41)
+
+[node name="Grass498" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-29, -42)
+
+[node name="Grass499" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-12, -42)
+
+[node name="Grass500" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(5, -41)
+
+[node name="Grass501" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(22, -41)
+
+[node name="Grass502" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-112, -56)
+
+[node name="Grass503" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-95, -56)
+
+[node name="Grass504" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-79, -56)
+
+[node name="Grass505" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-62, -55)
+
+[node name="Grass506" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-45, -56)
+
+[node name="Grass507" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-28, -57)
+
+[node name="Grass508" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-11, -57)
+
+[node name="Grass509" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(6, -56)
+
+[node name="Grass510" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(23, -56)
+
+[node name="Grass511" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-111, -70)
+
+[node name="Grass512" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-94, -70)
+
+[node name="Grass513" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-78, -70)
+
+[node name="Grass514" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-61, -69)
+
+[node name="Grass515" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-44, -70)
+
+[node name="Grass516" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-27, -71)
+
+[node name="Grass517" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-10, -71)
+
+[node name="Grass518" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(7, -70)
+
+[node name="Grass519" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(24, -70)
+
+[node name="Grass520" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-94, -84)
+
+[node name="Grass521" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-78, -84)
+
+[node name="Grass522" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-61, -83)
+
+[node name="Grass523" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-44, -84)
+
+[node name="Grass524" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-27, -85)
+
+[node name="Grass525" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-10, -85)
+
+[node name="Grass526" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(7, -84)
+
+[node name="Grass527" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(24, -84)
+
+[node name="Grass528" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-110, -99)
+
+[node name="Grass529" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-93, -99)
+
+[node name="Grass530" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-77, -99)
+
+[node name="Grass531" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-60, -98)
+
+[node name="Grass532" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-43, -99)
+
+[node name="Grass533" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-26, -100)
+
+[node name="Grass534" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-9, -100)
+
+[node name="Grass535" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(8, -99)
+
+[node name="Grass536" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(25, -99)
+
+[node name="Grass537" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-109, -113)
+
+[node name="Grass538" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-92, -113)
+
+[node name="Grass539" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-76, -113)
+
+[node name="Grass540" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-59, -112)
+
+[node name="Grass541" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-42, -113)
+
+[node name="Grass542" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-25, -114)
+
+[node name="Grass543" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-8, -114)
+
+[node name="Grass544" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(9, -113)
+
+[node name="Grass545" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(26, -113)
+
+[node name="Grass546" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-116, 47)
+
+[node name="Grass547" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-114, 4)
+
+[node name="Grass548" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-99, 47)
+
+[node name="Grass549" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-83, 47)
+
+[node name="Grass550" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-66, 48)
+
+[node name="Grass551" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-49, 47)
+
+[node name="Grass552" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-32, 46)
+
+[node name="Grass553" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-15, 46)
+
+[node name="Grass554" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(2, 47)
+
+[node name="Grass555" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(19, 47)
+
+[node name="Grass556" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-115, 32)
+
+[node name="Grass557" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-98, 32)
+
+[node name="Grass558" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-82, 32)
+
+[node name="Grass559" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-65, 33)
+
+[node name="Grass560" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-48, 32)
+
+[node name="Grass561" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-31, 31)
+
+[node name="Grass562" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-14, 31)
+
+[node name="Grass563" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(3, 32)
+
+[node name="Grass564" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(20, 32)
+
+[node name="Grass565" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-114, 18)
+
+[node name="Grass566" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-97, 18)
+
+[node name="Grass567" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-81, 18)
+
+[node name="Grass568" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-64, 19)
+
+[node name="Grass569" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-47, 18)
+
+[node name="Grass570" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-30, 17)
+
+[node name="Grass571" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-13, 17)
+
+[node name="Grass572" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(4, 18)
+
+[node name="Grass573" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(21, 18)
+
+[node name="Grass574" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-97, 4)
+
+[node name="Grass575" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-81, 4)
+
+[node name="Grass576" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-64, 5)
+
+[node name="Grass577" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-47, 4)
+
+[node name="Grass578" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-30, 3)
+
+[node name="Grass579" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-13, 3)
+
+[node name="Grass580" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(4, 4)
+
+[node name="Grass581" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(21, 4)
+
+[node name="Grass582" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-113, -11)
+
+[node name="Grass583" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-96, -11)
+
+[node name="Grass584" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-80, -11)
+
+[node name="Grass585" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-63, -10)
+
+[node name="Grass586" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-46, -11)
+
+[node name="Grass587" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-29, -12)
+
+[node name="Grass588" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-12, -12)
+
+[node name="Grass589" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(5, -11)
+
+[node name="Grass590" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(22, -11)
+
+[node name="Grass591" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-112, -25)
+
+[node name="Grass592" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-95, -25)
+
+[node name="Grass593" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-79, -25)
+
+[node name="Grass594" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-62, -24)
+
+[node name="Grass595" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-45, -25)
+
+[node name="Grass596" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-28, -26)
+
+[node name="Grass597" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-11, -26)
+
+[node name="Grass598" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(6, -25)
+
+[node name="Grass599" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(23, -25)
+
+[node name="Grass600" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-116, 47)
+
+[node name="Grass601" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-114, 4)
+
+[node name="Grass602" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-99, 47)
+
+[node name="Grass603" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-83, 47)
+
+[node name="Grass604" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-66, 48)
+
+[node name="Grass605" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-49, 47)
+
+[node name="Grass606" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-32, 46)
+
+[node name="Grass607" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-15, 46)
+
+[node name="Grass608" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(2, 47)
+
+[node name="Grass609" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(19, 47)
+
+[node name="Grass610" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-115, 32)
+
+[node name="Grass611" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-98, 32)
+
+[node name="Grass612" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-82, 32)
+
+[node name="Grass613" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-65, 33)
+
+[node name="Grass614" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-48, 32)
+
+[node name="Grass615" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-31, 31)
+
+[node name="Grass616" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-14, 31)
+
+[node name="Grass617" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(3, 32)
+
+[node name="Grass618" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(20, 32)
+
+[node name="Grass619" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-114, 18)
+
+[node name="Grass620" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-97, 18)
+
+[node name="Grass621" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-81, 18)
+
+[node name="Grass622" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-64, 19)
+
+[node name="Grass623" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-47, 18)
+
+[node name="Grass624" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-30, 17)
+
+[node name="Grass625" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-13, 17)
+
+[node name="Grass626" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(4, 18)
+
+[node name="Grass627" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(21, 18)
+
+[node name="Grass628" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-97, 4)
+
+[node name="Grass629" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-81, 4)
+
+[node name="Grass630" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-64, 5)
+
+[node name="Grass631" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-47, 4)
+
+[node name="Grass632" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-30, 3)
+
+[node name="Grass633" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-13, 3)
+
+[node name="Grass634" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(4, 4)
+
+[node name="Grass635" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(21, 4)
+
+[node name="Grass636" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-113, -11)
+
+[node name="Grass637" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-96, -11)
+
+[node name="Grass638" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-80, -11)
+
+[node name="Grass639" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-63, -10)
+
+[node name="Grass640" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-46, -11)
+
+[node name="Grass641" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-29, -12)
+
+[node name="Grass642" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-12, -12)
+
+[node name="Grass643" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(5, -11)
+
+[node name="Grass644" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(22, -11)
+
+[node name="Grass645" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-112, -25)
+
+[node name="Grass646" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-95, -25)
+
+[node name="Grass647" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-79, -25)
+
+[node name="Grass648" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-62, -24)
+
+[node name="Grass649" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-45, -25)
+
+[node name="Grass650" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-28, -26)
+
+[node name="Grass651" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(-11, -26)
+
+[node name="Grass652" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(6, -25)
+
+[node name="Grass653" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(23, -25)
+
+[node name="Grass4" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(95, 158)
+
+[node name="Grass5" parent="YSort/Objects/Grass" instance=ExtResource("7_ka4ks")]
+position = Vector2(65, 120)
+
+[node name="Enemy" type="Node2D" parent="YSort"]
+y_sort_enabled = true
+
+[node name="Bat" parent="YSort/Enemy" instance=ExtResource("8_37564")]
+position = Vector2(11, 112)
+
+[node name="Bat2" parent="YSort/Enemy" instance=ExtResource("8_37564")]
+position = Vector2(245, 210)
+
+[node name="Bat3" parent="YSort/Enemy" instance=ExtResource("8_37564")]
+position = Vector2(143, 282)

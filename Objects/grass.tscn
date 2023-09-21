@@ -1,0 +1,78 @@
+[gd_scene load_steps=12 format=3 uid="uid://bv8d25cqnhu3d"]
+
+[ext_resource type="Script" path="res://Objects/grass.gd" id="1_2ensi"]
+[ext_resource type="Texture2D" uid="uid://c1ylgogi58x0o" path="res://Action RPG Resources/World/Grass.png" id="1_d8fpv"]
+[ext_resource type="Texture2D" uid="uid://b6mwtb0b567xm" path="res://Action RPG Resources/Effects/GrassEffect.png" id="3_2c0xm"]
+[ext_resource type="PackedScene" uid="uid://wqmd3k7av0mj" path="res://Hitboxes/hurtbox.tscn" id="4_4db6i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oe4tc"]
+atlas = ExtResource("3_2c0xm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kk881"]
+atlas = ExtResource("3_2c0xm")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gq3g8"]
+atlas = ExtResource("3_2c0xm")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujg1y"]
+atlas = ExtResource("3_2c0xm")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0olc"]
+atlas = ExtResource("3_2c0xm")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hetix"]
+animations = [{
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("1_d8fpv")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_oe4tc")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_kk881")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_gq3g8")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_ujg1y")
+}, {
+"duration": 0.3,
+"texture": SubResource("AtlasTexture_y0olc")
+}],
+"loop": false,
+"name": &"Destroy",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7qpec"]
+size = Vector2(14, 14)
+
+[node name="Grass" type="Node2D"]
+script = ExtResource("1_2ensi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hetix")
+animation = &"Destroy"
+centered = false
+offset = Vector2(-8, -8)
+
+[node name="Hurtbox" parent="." instance=ExtResource("4_4db6i")]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+visible = false
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_7qpec")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+
+[editable path="Hurtbox"]
