@@ -1,12 +1,16 @@
-[gd_scene load_steps=14 format=3 uid="uid://chon7icuiw3q6"]
+[gd_scene load_steps=20 format=3 uid="uid://chon7icuiw3q6"]
 
 [ext_resource type="Texture2D" uid="uid://cypd2e1ewrgwq" path="res://Action RPG Resources/Enemies/Bat.png" id="1_ij1fe"]
 [ext_resource type="Script" path="res://Characters/bat.gd" id="1_ryj5b"]
 [ext_resource type="Texture2D" uid="uid://cmoejjh62ab7v" path="res://Action RPG Resources/Shadows/SmallShadow.png" id="2_mftoi"]
 [ext_resource type="PackedScene" uid="uid://cf86k1fap0abo" path="res://Misc/enemy_death_effect.tscn" id="2_wybnu"]
-[ext_resource type="PackedScene" uid="uid://wqmd3k7av0mj" path="res://Hitboxes/hurtbox.tscn" id="3_ca4mr"]
+[ext_resource type="PackedScene" uid="uid://wqmd3k7av0mj" path="res://Misc/hurtbox.tscn" id="3_ca4mr"]
 [ext_resource type="PackedScene" uid="uid://cknou6pu6j8fc" path="res://Misc/stats.tscn" id="5_cedc7"]
 [ext_resource type="PackedScene" uid="uid://bh3hvitmgrd0s" path="res://Misc/hit_effect.tscn" id="7_816o7"]
+[ext_resource type="PackedScene" uid="uid://cbfw5jxnvk5yl" path="res://Misc/player_detection_zone.tscn" id="8_hu5c1"]
+[ext_resource type="PackedScene" uid="uid://c84ymqymsnpyx" path="res://Misc/hitbox.tscn" id="9_pwndw"]
+[ext_resource type="AudioStream" uid="uid://0g0tg1d1kjlc" path="res://Action RPG Resources/Music and Sounds/EnemyDie.wav" id="10_v02nu"]
+[ext_resource type="AudioStream" uid="uid://b5qcj0llwkf84" path="res://Action RPG Resources/Music and Sounds/Hit.wav" id="11_dt8vx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3avy"]
 radius = 4.12311
@@ -58,6 +62,12 @@ _data = {
 "RESET": SubResource("Animation_hg3ul")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_3orwl"]
+radius = 130.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gipd7"]
+radius = 4.12311
+
 [node name="Bat" type="CharacterBody2D"]
 y_sort_enabled = true
 collision_layer = 16
@@ -80,8 +90,10 @@ texture = ExtResource("2_mftoi")
 shape = SubResource("CircleShape2D_b3avy")
 
 [node name="Hurtbox" parent="." instance=ExtResource("3_ca4mr")]
+visible = false
 collision_layer = 8
-collision_mask = 4
+monitoring = false
+monitorable = true
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2(0, -14)
@@ -94,15 +106,44 @@ libraries = {
 }
 
 [node name="Stats" parent="." instance=ExtResource("5_cedc7")]
-max_health = 2
+max_health = 3
 
 [node name="Hit_effect" parent="." instance=ExtResource("7_816o7")]
 visible = false
 z_index = 1
 position = Vector2(0, -17)
 
+[node name="Player_detection_zone" parent="." instance=ExtResource("8_hu5c1")]
+visible = false
+
+[node name="CollisionShape2D" parent="Player_detection_zone" index="0"]
+shape = SubResource("CircleShape2D_3orwl")
+
+[node name="Hitbox" parent="." instance=ExtResource("9_pwndw")]
+collision_layer = 64
+collision_mask = 4
+monitoring = true
+monitorable = false
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2(0, -17)
+shape = SubResource("CircleShape2D_gipd7")
+
+[node name="Death_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_v02nu")
+volume_db = -20.0
+
+[node name="Hit_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_dt8vx")
+volume_db = -20.0
+
 [connection signal="animation_finished" from="Enemy_death" to="." method="_on_enemy_death_animation_finished"]
-[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="got_hit" from="Hurtbox" to="." method="_on_hurtbox_got_hit"]
 [connection signal="no_health" from="Stats" to="." method="_on_stats_no_health"]
+[connection signal="player_found" from="Player_detection_zone" to="." method="_on_player_detection_zone_player_found"]
+[connection signal="player_lost" from="Player_detection_zone" to="." method="_on_player_detection_zone_player_lost"]
+[connection signal="hurtbox_found" from="Hitbox" to="." method="_on_hitbox_hurtbox_found"]
 
 [editable path="Hurtbox"]
+[editable path="Player_detection_zone"]
+[editable path="Hitbox"]

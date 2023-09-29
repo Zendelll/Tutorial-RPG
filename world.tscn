@@ -1,13 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://xk5pgpan7ruo"]
+[gd_scene load_steps=13 format=3 uid="uid://xk5pgpan7ruo"]
 
-[ext_resource type="PackedScene" uid="uid://dx1wxbexx87gw" path="res://Characters/player.tscn" id="2_rd7hc"]
 [ext_resource type="PackedScene" uid="uid://byjwer5naqkjn" path="res://Objects/bush.tscn" id="2_umx71"]
 [ext_resource type="PackedScene" uid="uid://bqq52ficjw13g" path="res://Objects/tree.tscn" id="3_ok0bg"]
 [ext_resource type="Texture2D" uid="uid://bo4p2fy1hbolg" path="res://Action RPG Resources/World/GrassBackground.png" id="4_x3xfx"]
+[ext_resource type="PackedScene" uid="uid://banq8lj5b1vt1" path="res://Characters/player_new.tscn" id="4_xwxax"]
 [ext_resource type="Texture2D" uid="uid://ggok184vpw3k" path="res://Action RPG Resources/World/DirtTileset.png" id="5_old4b"]
 [ext_resource type="Texture2D" uid="uid://dvf71el0clkdi" path="res://Action RPG Resources/World/CliffTileset.png" id="6_1iisl"]
 [ext_resource type="PackedScene" uid="uid://bv8d25cqnhu3d" path="res://Objects/grass.tscn" id="7_ka4ks"]
 [ext_resource type="PackedScene" uid="uid://chon7icuiw3q6" path="res://Characters/bat.tscn" id="8_37564"]
+[ext_resource type="AudioStream" uid="uid://dx7qoyq1micp0" path="res://Action RPG Resources/Music and Sounds/Music.mp3" id="9_50v4j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2h83e"]
 texture = ExtResource("5_old4b")
@@ -736,11 +737,11 @@ metadata/_edit_lock_ = true
 y_sort_enabled = true
 metadata/_edit_lock_ = true
 
-[node name="Player" parent="YSort" instance=ExtResource("2_rd7hc")]
-position = Vector2(114, 129)
+[node name="Player" parent="YSort" instance=ExtResource("4_xwxax")]
 
 [node name="Objects" type="Node2D" parent="YSort"]
 y_sort_enabled = true
+metadata/_edit_group_ = true
 
 [node name="Bushes" type="Node2D" parent="YSort/Objects"]
 y_sort_enabled = true
@@ -2729,7 +2730,21 @@ y_sort_enabled = true
 position = Vector2(11, 112)
 
 [node name="Bat2" parent="YSort/Enemy" instance=ExtResource("8_37564")]
-position = Vector2(245, 210)
+position = Vector2(203, 236)
+
+[node name="Bat4" parent="YSort/Enemy" instance=ExtResource("8_37564")]
+position = Vector2(150, 236)
+
+[node name="Bat5" parent="YSort/Enemy" instance=ExtResource("8_37564")]
+position = Vector2(96, 218)
+
+[node name="Bat6" parent="YSort/Enemy" instance=ExtResource("8_37564")]
+position = Vector2(177, 151)
 
 [node name="Bat3" parent="YSort/Enemy" instance=ExtResource("8_37564")]
-position = Vector2(143, 282)
+position = Vector2(80, 286)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_50v4j")
+volume_db = -20.0
+autoplay = true

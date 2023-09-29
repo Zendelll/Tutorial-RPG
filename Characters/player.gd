@@ -29,9 +29,20 @@ var input_direction = Vector2.ZERO
 var roll_ready = true
 var roll_charges = max_roll_charges
 var mouse_vector = Vector2.ZERO
+var hearts_size_px = 15
 
 @onready var animation_player = $AnimationPlayer
 @onready var roll_timer = $RollTimer
+@onready var invincible_timer = $InvincibleTimer
+@onready var stats = $Stats
+@onready var hit_effect = $Hit_effect
+@onready var hurtbox_collider = $Hurtbox/CollisionShape2D
+@onready var full_hearts_ui = $Player_UI/Health_UI/Full_Hearts
+@onready var roll_bar = $Player_UI/Roll_UI/Roll_Bar
+
+func _process(_delta):
+	full_hearts_ui.size.x = stats.health * hearts_size_px
+	roll_bar.value = roll_charges
 	
 func _physics_process(_delta):
 	if Input.is_action_just_pressed("roll") and input_direction != Vector2.ZERO and roll_ready:
@@ -54,8 +65,6 @@ func move_state():
 	play_move_animation(input_direction)
 	velocity = input_direction * move_speed
 	move_and_slide()
-	
-	
 
 func attack_state():
 	current_action = ATTACK
@@ -74,6 +83,7 @@ func roll_state():
 			roll_ready = false
 			roll_timer.start(roll_cooldown)
 		velocity = input_direction * roll_speed
+		hurtbox_collider.disabled = true
 		animation_player.play("roll_" + last_animation.split("_")[1])
 		last_animation = "roll_" + last_animation.split("_")[1]
 	move_and_slide()
@@ -114,7 +124,24 @@ func _on_animation_player_animation_finished(anim_name):
 	if anim_name.split("_")[0] == "attack" or anim_name.split("_")[0] == "roll":
 		current_state = state.MOVE
 		current_action = NONE
+		if anim_name.split("_")[0] == "roll":
+			hurtbox_collider.disabled = false
 
 func _on_roll_timer_timeout():
 	roll_ready = true
 	roll_charges = max_roll_charges
+
+func _on_hurtbox_area_entered(area):
+	if "Hitbox" in area.name:
+		var enemy = area.get_parent()
+		stats.take_damage(enemy.get_node("Stats").damage)
+		invincible_timer.start(stats.invincibility_time)
+		hurtbox_collider.set_deferred("disabled", true)
+		hit_effect.play_animation()
+
+func _on_invincible_timer_timeout():
+	if current_action != ROLL:
+		hurtbox_collider.disabled = false
+
+func _on_stats_no_health():
+	pass

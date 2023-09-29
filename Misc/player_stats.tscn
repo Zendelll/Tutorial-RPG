@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bma7o1wty46pt"]
+
+[ext_resource type="PackedScene" uid="uid://cknou6pu6j8fc" path="res://Misc/stats.tscn" id="1_q4qu7"]
+[ext_resource type="Script" path="res://Misc/player_stats.gd" id="2_kssvb"]
+
+[node name="PlayerStats" instance=ExtResource("1_q4qu7")]
+script = ExtResource("2_kssvb")
+max_health = 3
+invincibility_time = 0.5
+move_speed = 100.0
+roll_speed = 200.0
+roll_cooldown = 0.8
+max_roll_cooldown = 2.0
+max_roll_charges = 2

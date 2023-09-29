@@ -1,11 +1,8 @@
-res://Characters/bat.tscn
-res://Characters/bat.gd
+res://Characters/player_new.gd
+res://Characters/player_new.tscn
 res://Misc/stats.gd
 res://world.tscn
-res://Characters/player.tscn
-res://Objects/grass.tscn
-res://Misc/stats.tscn
-res://Misc/effect.tscn
-res://Misc/effect.gd
-res://Misc/enemy_death_effect.tscn
-res://Misc/hit_effect.tscn
+res://Misc/player_stats.tscn
+res://Characters/bat.tscn
+res://Characters/bat.gd
+res://Misc/player_stats.gd

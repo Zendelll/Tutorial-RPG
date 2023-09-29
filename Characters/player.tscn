@@ -1,9 +1,12 @@
-[gd_scene load_steps=25 format=3 uid="uid://dx1wxbexx87gw"]
+[gd_scene load_steps=29 format=3 uid="uid://dx1wxbexx87gw"]
 
 [ext_resource type="Texture2D" uid="uid://x4isvu3gh1fa" path="res://Action RPG Resources/Player/Player.png" id="1_6rryi"]
 [ext_resource type="Script" path="res://Characters/player.gd" id="1_53n7b"]
-[ext_resource type="PackedScene" uid="uid://c84ymqymsnpyx" path="res://Hitboxes/hitbox.tscn" id="3_2nrrm"]
-[ext_resource type="PackedScene" uid="uid://cknou6pu6j8fc" path="res://Misc/stats.tscn" id="4_u5bsa"]
+[ext_resource type="PackedScene" uid="uid://c84ymqymsnpyx" path="res://Misc/hitbox.tscn" id="3_2nrrm"]
+[ext_resource type="PackedScene" uid="uid://bma7o1wty46pt" path="res://Misc/player_stats.tscn" id="4_hay34"]
+[ext_resource type="PackedScene" uid="uid://wqmd3k7av0mj" path="res://Misc/hurtbox.tscn" id="5_26x78"]
+[ext_resource type="PackedScene" uid="uid://bh3hvitmgrd0s" path="res://Misc/hit_effect.tscn" id="6_5g3b1"]
+[ext_resource type="PackedScene" path="res://UI/player_ui.tscn" id="7_krm67"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ep54u"]
 radius = 4.5
@@ -601,6 +604,10 @@ _data = {
 "walk_up": SubResource("Animation_qvsh5")
 }
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y0ph1"]
+radius = 5.0
+height = 22.0
+
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_53n7b")
@@ -624,9 +631,11 @@ libraries = {
 zoom = Vector2(2, 2)
 
 [node name="RollTimer" type="Timer" parent="."]
+one_shot = true
 
 [node name="SwordHitbox" parent="." instance=ExtResource("3_2nrrm")]
-collision_layer = 4
+visible = false
+collision_layer = 32
 
 [node name="CollisionShape2D" parent="SwordHitbox" index="0"]
 position = Vector2(0, 11)
@@ -634,10 +643,38 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_umgnv")
 disabled = true
 
-[node name="Stats" parent="." instance=ExtResource("4_u5bsa")]
-max_health = 3
+[node name="Stats" parent="." instance=ExtResource("4_hay34")]
+move_speed = 100.0
+roll_speed = 200.0
+roll_cooldown = 0.8
+max_roll_cooldown = 2.0
+max_roll_charges = 2
+
+[node name="Hurtbox" parent="." instance=ExtResource("5_26x78")]
+visible = false
+collision_layer = 4
+collision_mask = 64
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(0, -6)
+shape = SubResource("CapsuleShape2D_y0ph1")
+
+[node name="Hit_effect" parent="." instance=ExtResource("6_5g3b1")]
+visible = false
+position = Vector2(0, -8)
+
+[node name="InvincibleTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Player_UI" parent="." instance=ExtResource("7_krm67")]
+z_index = 1
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="timeout" from="RollTimer" to="." method="_on_roll_timer_timeout"]
+[connection signal="no_health" from="Stats" to="." method="_on_stats_no_health"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="timeout" from="InvincibleTimer" to="." method="_on_invincible_timer_timeout"]
 
 [editable path="SwordHitbox"]
+[editable path="Hurtbox"]
+[editable path="Player_UI"]

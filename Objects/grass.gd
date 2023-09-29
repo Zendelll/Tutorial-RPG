@@ -12,7 +12,6 @@ func _process(_delta):
 func _on_animated_sprite_2d_animation_finished():
 	queue_free()
 
-func _on_hurtbox_area_entered(area):
-	if "Hitbox" in area.name:
-		disable = true
-		animated_sprite.play("Destroy")
+func _on_hurtbox_got_hit(_damage, _knockback_vector):
+	disable = true
+	animated_sprite.play("Destroy")
